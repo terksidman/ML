@@ -1,0 +1,58 @@
+*, *:after, *:before {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+}
+@media screen and (min-width: 760px){
+
+	ul {
+	list-style: none;
+	}
+	a {
+	text-decoration: none;
+	outline: none;
+	}
+	.main-div img{
+	display: block;
+	width: 100%;
+	}
+
+	.container{
+		width: 100%;
+	}
+	.header{
+		height: 20%;
+		background: black;
+	}
+	/*.header-logo{
+		padding: 5%;
+		width: 10%;
+		height: 10%;
+	}
+	.header-logo img{
+		width: 100%;
+	}*/
+	.header-menu-button{
+		float: left;
+	}
+
+	.main-div{
+		width: 50%;
+		height: 40%;
+		float: left;
+		background: grey;
+	}
+	.main-div:nth-child(1){
+		background: white;
+	}
+	.main-div:nth-child(4){
+		background: white;
+	}
+	.footer{
+		height: 10%;
+		widows: 100%;
+		background: black;
+	}
+
+}

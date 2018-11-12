@@ -1,0 +1,69 @@
+
+@media screen and (max-width: 760px) {
+	.header-menu{
+		display: none;
+		width: 100%;
+		position: relative;
+	}
+	#menu.active{
+		transition: 1s;
+		display: block;
+	}
+	.nav-toggle {
+		position: relative;
+		width: 20%;
+		
+		float: right;
+		background: grey;
+		cursor: pointer;
+	}
+	.nav-toggle span {
+		display: block;
+		position: absolute;
+		top: 19px;
+		left: 8px;
+		right: 8px;
+		height: 2px;
+		background: white;
+	}
+	.nav-toggle span:before, .nav-toggle span:after {
+		content: "";
+		position: absolute;
+		display: block;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: white;
+	}
+	.nav-toggle span:before {
+		top: -10px;
+	}
+	.nav-toggle span:after {
+		bottom: -10px;
+	}
+	/* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
+	/*#menu.active {
+		max-height: 123px;
+	}*/
+
+	.header-menu-button{
+		width: 100%;
+		height: 10%;
+		background: lightgrey;
+		text-align: center;
+		border-bottom: 1px solid grey;
+
+	}
+
+	.main-div{
+		widows: 100%;
+		height: 25%;
+		background: black;
+	}
+	.main-div:first-child{
+		
+	}
+	.main-div:nth-child(2n){
+		background: grey;
+	}
+}
